@@ -1,0 +1,17 @@
+/* Configurar o Git para trabalhar com o GitHub */
+git config --global user.name "José Antonio Gallo Junior"
+git config --global user.email gallojunior@gmail
+
+/* Conferir se o terminal está na pasta que quer criar o repositório */
+git clone https://github.com/gallojunior/pokedex-3EtimB.git
+
+/* Criar a solução da Pokedex */
+dotnet new sln --name Pokedex
+
+/* Criar o projeto MVC */
+dotnet new mvc --name Pokedex -f net6.0
+
+/* Adicionar o Git o projeto e enviar ao GitHub */
+git add .
+git commit -m "Criada a solução e o projeto MVC da Pokedex"
+git push

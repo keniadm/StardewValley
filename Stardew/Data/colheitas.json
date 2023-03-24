@@ -1,0 +1,178 @@
+﻿[
+  {
+    "Numero": 1,
+    "Nome": "Alho",
+    "Descricao": "Deixa os pratos ainda mais picantes. O alho de alta qualidade pode ser bem picante.",
+    "Preco": "40 ouros",
+    "Tipo": [ "Primavera" ] ,
+    "Dias": "4 dias",
+    "Maximo": 6,
+    "Vende": "60 ouros",
+    "Imagem": "\\img\\pokemons\\001.png"
+  },
+  {
+    "Numero": 2,
+    "Nome": "Berinjela",
+    "Descricao": "Uma alternativa rica e saudável para o tomate. Deliciosa frita ou cozida.",
+    "Preco": "20 ouros",
+    "Tipo": [ "Outono" ] ,
+    "Dias": "6 dias",
+    "Maximo": 5,
+    "Vende": "60 ouros",
+    "Imagem": "\\img\\pokemons\\012.png"
+  },
+  {
+    "Numero": 3,
+    "Nome": "Ruibarbo",
+    "Descricao": "O caule é extremamente ácido, mas é uma ótima sobremesa quando adoçado.",
+    "Preco": "100 ouros",
+    "Tipo": [ "Primavera" ] ,
+    "Dias": "13 dias",
+    "Maximo": 2,
+    "Vende": "220 ouros",
+    "Imagem": "\\img\\pokemons\\003.png"
+  },
+  {
+    "Numero": 4,
+    "Nome": "Mirtilo",
+    "Descricao": "Uma fruta bastante popular e que faz muito bem para a saúde. Sua casca azul possui a mais alta concentração de nutrientes.",
+    "Preco": "80 ouros",
+    "Tipo": [ "Verão" ] ,
+    "Dias": "13 dias",
+    "Maximo": 4,
+    "Vende": "50 ouros",
+    "Imagem": "\\img\\pokemons\\006.png"
+  },
+  {
+    "Numero": 5,
+    "Nome": "Couve-flor",
+    "Descricao": "Valiosa, mas de crescimento lento. Apesar de sua cor, as florzinhas estão cheias de nutrientes.",
+    "Preco": "80 ouros",
+    "Tipo": [ "Primavera" ] ,
+    "Dias": "12 dias",
+    "Maximo": 2,
+    "Vende": "175 ouros",
+    "Imagem": "\\img\\pokemons\\002.png"
+  },
+  {
+    "Numero": 6,
+    "Nome": "Alcachofra",
+    "Descricao": "O broto de um cardo. O exterior espinhoso esconde um interior suculento e recheado.",
+    "Preco": "30 ouros",
+    "Tipo": [ "Outono" ] ,
+    "Dias": "8 dias",
+    "Maximo": 3,
+    "Vende": "160 ouros",
+    "Imagem": "\\img\\pokemons\\013.png"
+  },
+  {
+    "Numero": 7,
+    "Nome": "Carambola",
+    "Descricao": "Uma fruta extremamente suculenta que cresce em temperatura quente e úmida. Ligeiramente doce com tons azedos. Ligeiramente doce com tons azedos.",
+    "Preco": "400 ouros",
+    "Tipo": [ "Verão" ] ,
+    "Dias": "13 dias",
+    "Maximo": 2,
+    "Vende": "750 ouros",
+    "Imagem": "\\img\\pokemons\\008.png"
+  },
+  {
+    "Numero": 8,
+    "Nome": "Chirívia",
+    "Descricao": "Um tubérculo que nasce na primavera e é parente da cenoura. Possui um leve gosto de terra e é cheio de nutrientes.",
+    "Preco": "20 ouros",
+    "Tipo": [ "Primavera" ] ,
+    "Dias": "4 dias",
+    "Maximo": 6,
+    "Vende": "35 ouros",
+    "Imagem": "\\img\\pokemons\\005.png"
+  },
+  {
+    "Numero": 9,
+    "Nome": "Couve Chinesa",
+    "Descricao": "As folhas verdes e caule fibroso são deliciosos e saudáveis.",
+    "Preco": "50 ouros",
+    "Tipo": [ "Outono" ] ,
+    "Dias": "4 dias",
+    "Maximo": 6,
+    "Vende": "80 ouros",
+    "Imagem": "\\img\\pokemons\\015.png"
+  },
+  {
+    "Numero": 10,
+    "Nome": "Milho",
+    "Descricao": "Um dos grãos mais populares. Os grãos doces e frescos são uma delícia de verão.",
+    "Preco": "150 ouros",
+    "Tipo": [ "Verão" ] ,
+    "Dias": "14 dias",
+    "Maximo": 4,
+    "Vende": "50 ouros",
+    "Imagem": "\\img\\pokemons\\009.png"
+  },
+  {
+    "Numero": 11,
+    "Nome": "Joia Doce",
+    "Descricao": "Joia Doce, ou Cereja de Joia Doce, tem o cheiro mais doce que você já sentiu.",
+    "Preco": "1000 ouros",
+    "Tipo": [ "Outono" ] ,
+    "Dias": "24 dias",
+    "Maximo": 1,
+    "Vende": "3000 ouros",
+    "Imagem": "\\img\\pokemons\\014.png"
+  },
+  {
+    "Numero": 12,
+    "Nome": "Morango",
+    "Descricao": "Uma fruta doce e suculenta com uma sedutora cor vermelha.",
+    "Preco": "100 ouros",
+    "Tipo": [ "Primavera" ] ,
+    "Dias": "8 dias",
+    "Maximo": 5,
+    "Vende": "120 ouros",
+    "Imagem": "\\img\\pokemons\\004.png"
+  },
+  {
+    "Numero": 13,
+    "Nome": "Melão",
+    "Descricao": "Uma delícia doce e fresca de verão.",
+    "Preco": "80 ouros",
+    "Tipo": [ "Verão" ] ,
+    "Dias": "12 dias",
+    "Maximo": 2,
+    "Vende": "260 ouros",
+    "Imagem": "\\img\\pokemons\\010.png"
+  },
+  {
+    "Numero": 14,
+    "Nome": "Abóbora",
+    "Descricao": "Uma delícia favorita do outono. Cultivada por suas sementes crocantes e polpa delicada e saborosa. De quebra, a casca oca pode ser utilizada como decoração festiva.",
+    "Preco": "100 ouros",
+    "Tipo": [ "Outono" ] ,
+    "Dias": "13 dias",
+    "Maximo": 2,
+    "Vende": "320 ouros",
+    "Imagem": "\\img\\pokemons\\011.png"
+  },
+  {
+    "Numero": 15,
+    "Nome": "Tomate",
+    "Descricao": "Muito saboroso e ligeiramente picante, o Tomate possui uma variedade de utilizações culinárias.",
+    "Preco": "50 ouros",
+    "Tipo": [ "Verão" ] ,
+    "Dias": "11 dias",
+    "Maximo": 5,
+    "Vende": "60 ouros",
+    "Imagem": "\\img\\pokemons\\007.png"
+  },
+  {
+    "Numero": 16,
+    "Nome": "Fruta Antiga",
+    "Descricao": "Está dormente há eras.",
+    "Preco": "Esta fruta não pode ser comprada.",
+    "Tipo": [ "Primavera", "Verão", "Outono" ] ,
+    "Dias": "28 dias",
+    "Maximo": 1,
+    "Vende": "550 ouros",
+    "Imagem": "\\img\\pokemons\\016.png"
+  }
+]

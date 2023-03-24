@@ -1,0 +1,63 @@
+html {
+  overflow-y: scroll;
+}
+
+.card {
+  --bs-card-bg: #01003d93;
+  border: 6px solid transparent;
+  -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch;
+  border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch;
+}
+
+.bi .bi-arrow-up-circle-fill .text-danger {
+  color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important
+}
+
+.card-title {
+  color: white;
+}
+
+.card-text {
+  color: white;
+}
+
+.card:hover {
+  
+  transform: scale(1.15);
+  transition: 1s;
+  z-index: 1000;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dc3545;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
+  background-color: #1679d9;
+  background-attachment: fixed;
+}

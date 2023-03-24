@@ -1,0 +1,68 @@
+﻿@model StardewDto
+@inject Stardew.Services.IColheService service
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="pt-5 pb-3 text-center container">
+    <div class="row">
+        <div class="col mx-auto">
+            <h1 style="color: white;">Colheitas da Fazenda</h1>
+            <div class="group">
+                <button id="btn-all" class="btn btn-sm my-2 text-white btn-filter" style="background-color: #112d6d;" onclick="filter('all')">
+                    Ver Todos
+                </button>
+                @foreach (var tipo in Model.Tipos)
+
+                {
+                    <button id="btn-@tipo.Nome.ToLower()" class="btn btn-sm my-2 text-white btn-filter"  onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@tipo.Cor">
+                        @tipo.Nome
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<div class="album py-5">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+            <!-- Card Colheita - Inicio -->
+            @foreach (var colheita in Model.Colheitas)
+            {
+                <div class="col">
+                    <div class="card shadow-sm cursor-pointer @string.Join(' ',colheita.Tipo).ToLower()" onclick="GetInfo(@colheita.Numero)">
+                        <img src="@colheita.Imagem" class="card-img-top" width="100%" height="300" alt="@colheita.Nome" />
+                        <div class="card-body">
+                            <p class="card-text mb-0">Nº @colheita.Numero.ToString("000")</p>
+                            <h3 class="card-title">@colheita.Nome</h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    @foreach (var tipo in colheita.Tipo)
+
+                                    {
+                                        <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn my-2 text-white"
+                                            style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <!-- Card Colheita - Fim -->
+            <div id="zeroColheita" class="col-lg-12 text-center">
+                <h1 class="my-3 text-primary">Não é possível plantar no inverno</h1>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/site.js"></script>
+    <script>
+        let toFilter = '@Html.Raw(ViewData["Filter"])';
+        filter(toFilter);
+        function GetInfo(number) {
+            window.location = '@Url.Action("Details", "Home")' + '?Numero=' + number;
+        }
+    </script>
+}
