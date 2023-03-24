@@ -46,18 +46,18 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #dc3545;
+  background: #dc8e35;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #cf7d20;
 }
 
 body {
   background-repeat: no-repeat;
   background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
-  background-color: #1679d9;
+  background-color: #dc8e357c;
   background-attachment: fixed;
 }

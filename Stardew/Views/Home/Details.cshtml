@@ -3,24 +3,26 @@
 @{
     ViewData["Title"] = "Colheita";
 }
-<section class="pt-5 container">
+
+<body style="background-repeat: no-repeat; background-image: url('https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png'); background-color: #dc8e357c; background-attachment: fixed;">
+<section class="pt-5 container" style="background-color: #01003d93; color:white; border: 6px solid transparent; -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; margin-top: 50px;">
     <div class="row">
         <div class="col text-center">
             @if (Model.Prior != null)
             {
-                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-dark">
+                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-light">
                     @Model.Prior.Numero.ToString("000") - @Model.Prior.Nome
                 </a>
             }
         </div>
         <div class="col text-center">
-            <h1 class="fs-1">@Model.Current.Nome <span class="fs-2 text-secondary">Nº
+            <h1 class="fs-1">@Model.Current.Nome <span class="fs-2 text-ligth">Nº
                     @Model.Current.Numero.ToString("000")</span></h1>
         </div>
         <div class="col text-center">
             @if (Model.Next != null)
             {
-                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-dark">
+                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-light">
                     @Model.Next.Numero.ToString("000") - @Model.Next.Nome
                 </a>
             }
@@ -46,3 +48,4 @@
         </div>
     </div>
 </section>
+</body>
