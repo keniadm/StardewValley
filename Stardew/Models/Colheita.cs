@@ -11,6 +11,8 @@ namespace Stardew.Models
         public string Dias { get; set; }
         public double Maximo { get; set; }
         public string Vende { get; set; }
+        public string Crescimento { get; set; }
+        public string Semente { get; set; }
         public string Imagem { get; set; }
 
         // Método Construtor

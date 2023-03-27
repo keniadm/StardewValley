@@ -4,7 +4,7 @@ html {
 
 .card {
   --bs-card-bg: #01003d93;
-  border: 6px solid transparent;
+  border: 10px solid transparent;
   -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch;
   border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch;
 }
@@ -56,8 +56,20 @@ html {
 }
 
 body {
-  background-repeat: no-repeat;
+  background: center center cover no-repeat fixed;
   background-image: url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png");
   background-color: #dc8e357c;
-  background-attachment: fixed;
+  background-attachment:fixed;
+}
+
+#imgestacao:focus {
+  width: 150px;
+  height: 101px;
+}
+
+.btntodos {
+  min-width: 130px;
+  min-height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
 }

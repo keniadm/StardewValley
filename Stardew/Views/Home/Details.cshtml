@@ -4,48 +4,68 @@
     ViewData["Title"] = "Colheita";
 }
 
-<body style="background-repeat: no-repeat; background-image: url('https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png'); background-color: #dc8e357c; background-attachment: fixed;">
-<section class="pt-5 container" style="background-color: #01003d93; color:white; border: 6px solid transparent; -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; margin-top: 50px;">
-    <div class="row">
-        <div class="col text-center">
-            @if (Model.Prior != null)
-            {
-                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-light">
-                    @Model.Prior.Numero.ToString("000") - @Model.Prior.Nome
-                </a>
-            }
-        </div>
-        <div class="col text-center">
-            <h1 class="fs-1">@Model.Current.Nome <span class="fs-2 text-ligth">Nº
-                    @Model.Current.Numero.ToString("000")</span></h1>
-        </div>
-        <div class="col text-center">
-            @if (Model.Next != null)
-            {
-                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-light">
-                    @Model.Next.Numero.ToString("000") - @Model.Next.Nome
-                </a>
-            }
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-lg-5 p-0">
-            <img class="img-fluid cursor-pointer" src="@Model.Current.Imagem" alt="@Model.Current.Nome">
-        </div>
-        <div class="col-lg-7 fs-5 mt-4">
-            <p class="mb-3"><strong>Descrição:</strong> <i>@Model.Current.Descricao</i></p>
-            <p class="mb-3"><strong>Preço da Semente:</strong> <img alt="Gold.png" src="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/18px-Gold.png" width="18" height="18" srcset="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png 1.5x, https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/36px-Gold.png 2x">@Model.Current.Preco</p>
-            <p class="mb-3"><strong>Dias para Crescer:</strong> @Model.Current.Dias</p>
-            <p class="mb-3"><strong>Máximo de Colheitas por Estação:</strong> @Model.Current.Maximo</p>
-            <p class="mb-3"><strong>Vende Por:</strong> <img alt="Gold.png" src="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/18px-Gold.png" width="18" height="18" srcset="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png 1.5x, https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/36px-Gold.png 2x">@Model.Current.Vende </p>
-            <p class="fw-bold">Tipo</p>
-            <div class="btn-group">
-                @foreach (var tipo in Model.Current.Tipo)
+<body
+    style="background-repeat: no-repeat; background-image: url('https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png'); background-color: #dc8e357c; background-attachment: fixed;">
+    <section class="pt-5 container"
+        style="background-color: #01003d93; color:white; border: 12px solid transparent; -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 15 stretch; margin-top: 50px;">
+        <div class="row">
+            <div class="col text-center">
+                @if (Model.Prior != null)
                 {
-                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                    <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-light">
+                        @Model.Prior.Numero.ToString("000") - @Model.Prior.Nome
+                    </a>
+                }
+            </div>
+            <div class="col text-center">
+                <h1 class="fs-1">@Model.Current.Nome <span class="fs-2 text-ligth">Nº
+                        @Model.Current.Numero.ToString("000")</span></h1>
+            </div>
+            <div class="col text-center">
+                @if (Model.Next != null)
+                {
+                    <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-light">
+                        @Model.Next.Numero.ToString("000") - @Model.Next.Nome
+                    </a>
                 }
             </div>
         </div>
-    </div>
-</section>
+        <div class="row mt-3">
+            <div class="col-lg-5 p-0">
+                <img class="img-fluid cursor-pointer" src="@Model.Current.Imagem" alt="@Model.Current.Nome">
+            </div>
+            <div class="col-lg-7 fs-5 mt-4">
+                <p class="mb-3"><strong>Descrição:</strong> <i>@Model.Current.Descricao</i></p>
+                <p class="mb-3"><strong>Preço da Semente:</strong> <img alt="Gold.png"
+                        src="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/18px-Gold.png"
+                        width="18" height="18"
+                        srcset="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png 1.5x, https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/36px-Gold.png 2x">@Model.Current.Preco
+                </p>
+                <p class="mb-3"><strong>Dias para Crescer:</strong> @Model.Current.Dias</p>
+                <p class="mb-3"><strong>Máximo de Colheitas por Estação:</strong> @Model.Current.Maximo</p>
+                <p class="mb-3"><strong>Vende Por:</strong> <img alt="Gold.png"
+                        src="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/18px-Gold.png"
+                        width="18" height="18"
+                        srcset="https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png 1.5x, https://stardewcommunitywiki.com/mediawiki/images/thumb/1/10/Gold.png/36px-Gold.png 2x">@Model.Current.Vende
+                </p>
+                <div class="mb-3"><strong>Crescimento:</strong>
+                    <p>
+                        <img class="img-fluid cursor-pointer" src="@Model.Current.Semente" alt="@Model.Current.Nome"
+                            width="140px" height="140px">
+                        <img class="img-fluid cursor-pointer" src="@Model.Current.Crescimento" alt="@Model.Current.Nome"
+                            width="480px" height="107px">
+                    </p>
+                </div>
+                <div class="btn-group">
+                    <strong class="fw-bold">Tipo:</strong>
+                    @foreach (var tipo in Model.Current.Tipo)
+                    {
+                        <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white"
+                            style="background-color:@service.GetTipo(tipo).Cor; margin-left:10px; border-radius: 7px">@tipo</a>
+                    }
+                </div><br><br>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>

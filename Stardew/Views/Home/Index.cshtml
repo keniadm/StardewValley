@@ -7,17 +7,16 @@
 <section class="pt-5 pb-3 text-center container">
     <div class="row">
         <div class="col mx-auto">
-            <h1 style="color: white;">Colheitas da Fazenda</h1>
+            <h1 style="color: white; margin-bottom: 20px">Colheitas da Fazenda</h1>
             <div class="group">
-                <button id="btn-all" class="btn btn-sm my-2 text-white btn-filter" style="background-color: #112d6d;" onclick="filter('all')">
+                <button id="btn-all" class="btn btntodos my-2 text-white btn-filter" style="background-color: #112d6d;" onclick="filter('all')">
                     Ver Todos
                 </button>
+                <p></p>
                 @foreach (var tipo in Model.Tipos)
 
                 {
-                    <button id="btn-@tipo.Nome.ToLower()" class="btn btn-sm my-2 text-white btn-filter"  onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@tipo.Cor">
-                        @tipo.Nome
-                    </button>
+                    <img id="btn-@tipo.Nome.ToLower()" class="btn my-2 p-0 text-white btn-filter"  onclick="filter('@tipo.Nome.ToLower()')" src="@tipo.Img.ToLower()" width="130px" height="90px" style="border: 10px solid transparent; -webkit-border-image: url(https://pt.stardewcommunitywiki.com/mediawiki/skins/Vector/stardewimages/menu_border.png) 12 stretch; ">
                 }
             </div>
         </div>
@@ -31,7 +30,7 @@
             {
                 <div class="col">
                     <div class="card shadow-sm cursor-pointer @string.Join(' ',colheita.Tipo).ToLower()" onclick="GetInfo(@colheita.Numero)">
-                        <img src="@colheita.Imagem" class="card-img-top" width="100%" height="300" alt="@colheita.Nome" />
+                        <img src="@colheita.Imagem" class="card-img-top" width="100%" height="100%" alt="@colheita.Nome" />
                         <div class="card-body">
                             <p class="card-text mb-0">Nº @colheita.Numero.ToString("000")</p>
                             <h3 class="card-title">@colheita.Nome</h3>
@@ -41,7 +40,7 @@
 
                                     {
                                         <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn my-2 text-white"
-                                            style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                                            style="background-color:@service.GetTipo(tipo).Cor; font-size:14px" >@tipo</a>
                                     }
                                 </div>
                             </div>

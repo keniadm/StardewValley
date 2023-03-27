@@ -28,9 +28,6 @@ public class HomeController : Controller
         return View(colheita);
     }
 
-
-
-
     public IActionResult Privacy()
     {
         return View();

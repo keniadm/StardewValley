@@ -1,18 +1,22 @@
 ﻿[
   {
     "Nome": "Primavera",
-    "Cor": "#F944D0"
+    "Cor": "#F944D0",
+    "Img": "\\img\\favicons\\primavera.png"
   },
   {
     "Nome": "Verão",
-    "Cor": "#FACC3A"
+    "Cor": "#FACC3A",
+    "Img": "\\img\\favicons\\verao.png"
   },
   {
     "Nome": "Outono",
-    "Cor": "#FA7443"
+    "Cor": "#FA7443",
+    "Img": "\\img\\favicons\\outono.png"
   },
   {
     "Nome": "Inverno",
-    "Cor": "#2A8FFA"
+    "Cor": "#2A8FFA",
+    "Img": "\\img\\favicons\\inverno.png"
   }
 ]

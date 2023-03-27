@@ -8,6 +8,8 @@
     "Dias": "4 dias",
     "Maximo": 6,
     "Vende": "60 ouros",
+    "Crescimento": "\\img\\crescimento\\alho.png",
+    "Semente": "\\img\\sementes\\alho.png",
     "Imagem": "\\img\\pokemons\\001.png"
   },
   {
@@ -19,6 +21,8 @@
     "Dias": "6 dias",
     "Maximo": 5,
     "Vende": "60 ouros",
+    "Crescimento": "\\img\\crescimento\\berinjela.png",
+    "Semente": "\\img\\sementes\\berinjela.png",
     "Imagem": "\\img\\pokemons\\012.png"
   },
   {
@@ -30,6 +34,8 @@
     "Dias": "13 dias",
     "Maximo": 2,
     "Vende": "220 ouros",
+    "Crescimento": "\\img\\crescimento\\ruibarbo.png",
+    "Semente": "\\img\\sementes\\ruibarbo.png",
     "Imagem": "\\img\\pokemons\\003.png"
   },
   {
@@ -41,6 +47,8 @@
     "Dias": "13 dias",
     "Maximo": 4,
     "Vende": "50 ouros",
+    "Crescimento": "\\img\\crescimento\\mirtilo.png",
+    "Semente": "\\img\\sementes\\mirtilo.png",
     "Imagem": "\\img\\pokemons\\006.png"
   },
   {
@@ -52,6 +60,8 @@
     "Dias": "12 dias",
     "Maximo": 2,
     "Vende": "175 ouros",
+    "Crescimento": "\\img\\crescimento\\couveflor.png",
+    "Semente": "\\img\\sementes\\couveflor.png",
     "Imagem": "\\img\\pokemons\\002.png"
   },
   {
@@ -63,6 +73,8 @@
     "Dias": "8 dias",
     "Maximo": 3,
     "Vende": "160 ouros",
+    "Crescimento": "\\img\\crescimento\\alcachofra.png",
+    "Semente": "\\img\\sementes\\alcachofra.png",
     "Imagem": "\\img\\pokemons\\013.png"
   },
   {
@@ -74,6 +86,8 @@
     "Dias": "13 dias",
     "Maximo": 2,
     "Vende": "750 ouros",
+    "Crescimento": "\\img\\crescimento\\carambola.png",
+    "Semente": "\\img\\sementes\\carambola.png",
     "Imagem": "\\img\\pokemons\\008.png"
   },
   {
@@ -85,6 +99,8 @@
     "Dias": "4 dias",
     "Maximo": 6,
     "Vende": "35 ouros",
+    "Crescimento": "\\img\\crescimento\\chirivia.png",
+    "Semente": "\\img\\sementes\\chirivia.png",
     "Imagem": "\\img\\pokemons\\005.png"
   },
   {
@@ -96,6 +112,8 @@
     "Dias": "4 dias",
     "Maximo": 6,
     "Vende": "80 ouros",
+    "Crescimento": "\\img\\crescimento\\couvechinesa.png",
+    "Semente": "\\img\\sementes\\couvechinesa.png",
     "Imagem": "\\img\\pokemons\\015.png"
   },
   {
@@ -107,6 +125,8 @@
     "Dias": "14 dias",
     "Maximo": 4,
     "Vende": "50 ouros",
+    "Crescimento": "\\img\\crescimento\\milho.png",
+    "Semente": "\\img\\sementes\\milho.png",
     "Imagem": "\\img\\pokemons\\009.png"
   },
   {
@@ -118,6 +138,8 @@
     "Dias": "24 dias",
     "Maximo": 1,
     "Vende": "3000 ouros",
+    "Crescimento": "\\img\\crescimento\\cereja.png",
+    "Semente": "\\img\\sementes\\cereja.png",
     "Imagem": "\\img\\pokemons\\014.png"
   },
   {
@@ -129,6 +151,8 @@
     "Dias": "8 dias",
     "Maximo": 5,
     "Vende": "120 ouros",
+    "Crescimento": "\\img\\crescimento\\morango.png",
+    "Semente": "\\img\\sementes\\morango.png",
     "Imagem": "\\img\\pokemons\\004.png"
   },
   {
@@ -140,6 +164,8 @@
     "Dias": "12 dias",
     "Maximo": 2,
     "Vende": "260 ouros",
+    "Crescimento": "\\img\\crescimento\\melao.png",
+    "Semente": "\\img\\sementes\\melao.png",
     "Imagem": "\\img\\pokemons\\010.png"
   },
   {
@@ -151,6 +177,8 @@
     "Dias": "13 dias",
     "Maximo": 2,
     "Vende": "320 ouros",
+    "Crescimento": "\\img\\crescimento\\abobora.png",
+    "Semente": "\\img\\sementes\\abobora.png",
     "Imagem": "\\img\\pokemons\\011.png"
   },
   {
@@ -162,6 +190,8 @@
     "Dias": "11 dias",
     "Maximo": 5,
     "Vende": "60 ouros",
+    "Crescimento": "\\img\\crescimento\\tomate.png",
+    "Semente": "\\img\\sementes\\tomate.png",
     "Imagem": "\\img\\pokemons\\007.png"
   },
   {
@@ -173,6 +203,8 @@
     "Dias": "28 dias",
     "Maximo": 1,
     "Vende": "550 ouros",
+    "Crescimento": "\\img\\crescimento\\frutaantiga.png",
+    "Semente": "\\img\\sementes\\frutaantiga.png",
     "Imagem": "\\img\\pokemons\\016.png"
   }
 ]
